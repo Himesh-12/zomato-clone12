@@ -1,0 +1,378 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Zomato Collections
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="border-b border-gray-200">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="flex items-center justify-between h-16">
+     <div class="flex items-center space-x-6">
+      <div class="font-montserrat font-extrabold text-2xl select-none cursor-default">
+       zomato
+      </div>
+      <div class="relative">
+       <button aria-label="Select location" class="flex items-center border border-gray-300 rounded-md py-1.5 px-3 text-gray-600 text-sm hover:ring-1 hover:ring-red-500 focus:outline-none focus:ring-1 focus:ring-red-500">
+        <i class="fas fa-map-marker-alt text-red-600 mr-1">
+        </i>
+        <span class="mr-1">
+         Pune
+        </span>
+        <i class="fas fa-chevron-down text-gray-400">
+        </i>
+       </button>
+      </div>
+      <div class="relative flex-1 max-w-lg">
+       <input aria-label="Search for restaurant, cuisine or a dish" class="w-full border border-gray-300 rounded-md py-2 pl-10 pr-4 text-sm text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500" placeholder="Search for restaurant, cuisine or a dish" type="search"/>
+       <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm pointer-events-none">
+       </i>
+      </div>
+     </div>
+     <div class="flex items-center space-x-6 text-sm text-gray-700">
+      <button class="hover:underline">
+       Log in
+      </button>
+      <button class="hover:underline">
+       Sign up
+      </button>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <!-- Breadcrumb -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-3 text-xs text-gray-500 select-none">
+   <nav aria-label="Breadcrumb" class="flex flex-wrap items-center space-x-1 sm:space-x-2">
+    <ol class="inline-flex items-center space-x-1 sm:space-x-2">
+     <li>
+      <a class="hover:underline" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <span>
+       /
+      </span>
+     </li>
+     <li>
+      <a class="hover:underline" href="#">
+       Pune
+      </a>
+     </li>
+     <li>
+      <span>
+       /
+      </span>
+     </li>
+     <li>
+      <a class="hover:underline" href="#">
+       Collections
+      </a>
+     </li>
+     <li>
+      <span>
+       /
+      </span>
+     </li>
+     <li aria-current="page" class="text-gray-400">
+      Top Trending Spots
+     </li>
+    </ol>
+   </nav>
+  </div>
+  <!-- Main Collection Banner -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-3">
+   <div class="relative rounded-lg overflow-hidden">
+    <img alt="Restaurant interior with tables and green plants visible through large windows" class="w-full h-auto object-cover rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/b374fc87-1449-40aa-dc0d-95226ef03b8b.jpg" width="1200"/>
+    <div class="absolute inset-0 bg-black bg-opacity-60 rounded-lg flex flex-col justify-center p-6 max-w-xl">
+     <span class="text-xs text-gray-300 uppercase font-semibold tracking-wide mb-1 select-none">
+      ZOMATO COLLECTIONS
+     </span>
+     <h1 class="text-white font-montserrat font-extrabold text-3xl leading-tight mb-2 select-text">
+      Top Trending Spots
+     </h1>
+     <p class="text-gray-200 text-sm mb-3 select-text">
+      The restaurants that are talk of the town. Look out for more such popular places, updated every Thursday!
+     </p>
+     <span class="text-gray-300 text-xs select-text">
+      38 Places
+     </span>
+    </div>
+    <button aria-label="Save Collection" class="absolute top-3 right-3 bg-black bg-opacity-60 text-white text-xs rounded-full px-3 py-1 flex items-center space-x-1 hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-red-500">
+     <i class="fas fa-plus text-xs">
+     </i>
+     <span>
+      Save Collection
+     </span>
+    </button>
+    <button aria-label="Link to collection" class="absolute top-3 right-12 bg-black bg-opacity-60 text-white text-xs rounded-full p-1 hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-red-500">
+     <i class="fas fa-link">
+     </i>
+    </button>
+   </div>
+  </div>
+  <!-- Cards Grid -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    <!-- Card 1 -->
+    <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+     <div class="relative">
+      <img alt="Colorful outdoor restaurant with umbrellas and tables" class="w-full h-36 object-cover" height="220" src="https://storage.googleapis.com/a1aa/image/7684642c-4ff9-434f-e2be-6a681b128edb.jpg" width="400"/>
+      <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs font-semibold rounded px-2 py-0.5 flex items-center space-x-1 select-none">
+       <i class="fas fa-bolt">
+       </i>
+       <span>
+        Flat 20% OFF
+       </span>
+      </div>
+     </div>
+     <div class="p-3">
+      <h3 class="font-bold text-sm mb-0.5 select-text">
+       Planet 9
+      </h3>
+      <div class="flex items-center space-x-1 mb-1 select-none">
+       <span class="bg-green-500 text-white text-xs rounded px-1.5 py-0.5 font-semibold flex items-center">
+        4.4
+        <i class="fas fa-star ml-1 text-xs">
+        </i>
+       </span>
+       <span class="text-gray-500 text-xs uppercase tracking-wide">
+        Dining
+       </span>
+      </div>
+      <p class="text-gray-500 text-xs leading-tight truncate select-text" title="North Indian, Mughlai, Mexican, ...">
+       North Indian, Mughlai, Mexican, ...
+       <br/>
+       Bavdhan, Pune
+      </p>
+     </div>
+    </article>
+    <!-- Card 2 -->
+    <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+     <div class="relative">
+      <img alt="Cozy wooden interior restaurant with tables and warm lighting" class="w-full h-36 object-cover" height="220" src="https://storage.googleapis.com/a1aa/image/8ce8d94f-f504-4530-0ff6-534bf172a7e9.jpg" width="400"/>
+     </div>
+     <div class="p-3">
+      <h3 class="font-bold text-sm mb-0.5 select-text">
+       Babylon Craft Brewery
+      </h3>
+      <div class="flex items-center space-x-1 mb-1 select-none">
+       <span class="bg-green-500 text-white text-xs rounded px-1.5 py-0.5 font-semibold flex items-center">
+        4.4
+        <i class="fas fa-star ml-1 text-xs">
+        </i>
+       </span>
+       <span class="text-gray-500 text-xs uppercase tracking-wide">
+        Dining
+       </span>
+      </div>
+      <p class="text-gray-500 text-xs leading-tight truncate select-text" title="North Indian, Chinese, Continental...">
+       North Indian, Chinese, Continental...
+       <br/>
+       Erandwane, Pune
+      </p>
+     </div>
+    </article>
+    <!-- Card 3 -->
+    <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+     <div class="relative">
+      <img alt="Outdoor restaurant terrace at night with tables and lights" class="w-full h-36 object-cover" height="220" src="https://storage.googleapis.com/a1aa/image/36955e69-1158-4d00-5c59-97d07a39eebe.jpg" width="400"/>
+      <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs font-semibold rounded px-2 py-0.5 flex items-center space-x-1 select-none">
+       <i class="fas fa-bolt">
+       </i>
+       <span>
+        Flat 15% OFF
+       </span>
+      </div>
+     </div>
+     <div class="p-3">
+      <h3 class="font-bold text-sm mb-0.5 select-text">
+       Acai
+      </h3>
+      <div class="flex items-center space-x-1 mb-1 select-none">
+       <span class="bg-green-500 text-white text-xs rounded px-1.5 py-0.5 font-semibold flex items-center">
+        4.4
+        <i class="fas fa-star ml-1 text-xs">
+        </i>
+       </span>
+       <span class="text-gray-500 text-xs uppercase tracking-wide">
+        Dining
+       </span>
+      </div>
+      <p class="text-gray-500 text-xs leading-tight truncate select-text" title="North Indian, Continental, Italian,...">
+       North Indian, Continental, Italian,...
+       <br/>
+       Dhole Patil Road, Pune
+      </p>
+     </div>
+    </article>
+    <!-- Card 4 -->
+    <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+     <div class="relative">
+      <img alt="Elegant restaurant interior with staircase and warm lighting" class="w-full h-36 object-cover" height="220" src="https://storage.googleapis.com/a1aa/image/7c536ffe-2c7f-4b6a-a0b0-3b82e596241d.jpg" width="400"/>
+     </div>
+     <div class="p-3">
+      <h3 class="font-bold text-sm mb-0.5 select-text">
+       Bastian Empire
+      </h3>
+      <div class="flex items-center space-x-1 mb-1 select-none">
+       <span class="bg-yellow-400 text-black text-xs rounded px-1.5 py-0.5 font-semibold flex items-center">
+        2.7
+        <i class="fas fa-star ml-1 text-xs">
+        </i>
+       </span>
+       <span class="text-gray-500 text-xs uppercase tracking-wide">
+        Dining
+       </span>
+      </div>
+      <p class="text-gray-500 text-xs leading-tight truncate select-text" title="Seafood, Asian">
+       Seafood, Asian
+       <br/>
+       Koregaon Park, Pune
+      </p>
+     </div>
+    </article>
+    <!-- Card 5 -->
+    <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+     <div class="relative">
+      <img alt="Outdoor restaurant at night with warm lights and seating" class="w-full h-36 object-cover" height="220" src="https://storage.googleapis.com/a1aa/image/0c1af4a1-2ede-426d-c7b8-1adec57dd946.jpg" width="400"/>
+      <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs font-semibold rounded px-2 py-0.5 flex items-center space-x-1 select-none">
+       <i class="fas fa-bolt">
+       </i>
+       <span>
+        Flat 50% OFF
+       </span>
+      </div>
+     </div>
+     <div class="p-3">
+      <h3 class="font-bold text-sm mb-0.5 select-text">
+       Sukhi Da Dhaba
+      </h3>
+      <div class="flex items-center space-x-1 mb-1 select-none">
+       <span class="bg-green-500 text-white text-xs rounded px-1.5 py-0.5 font-semibold flex items-center">
+        4.0
+        <i class="fas fa-star ml-1 text-xs">
+        </i>
+       </span>
+       <span class="text-gray-500 text-xs uppercase tracking-wide">
+        Dining
+       </span>
+      </div>
+      <p class="text-gray-500 text-xs leading-tight truncate select-text" title="North Indian, Asian, Mughlai, Fas...">
+       North Indian, Asian, Mughlai, Fas...
+       <br/>
+       Wakad, Pune
+      </p>
+     </div>
+    </article>
+    <!-- Card 6 -->
+    <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+     <div class="relative">
+      <img alt="Modern restaurant interior with green plants and warm lighting" class="w-full h-36 object-cover" height="220" src="https://storage.googleapis.com/a1aa/image/84a4de09-7c95-4dbf-83e7-9622762422e0.jpg" width="400"/>
+      <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs font-semibold rounded px-2 py-0.5 flex items-center space-x-1 select-none">
+       <i class="fas fa-bolt">
+       </i>
+       <span>
+        Flat 20% OFF
+       </span>
+      </div>
+     </div>
+     <div class="p-3">
+      <h3 class="font-bold text-sm mb-0.5 select-text">
+       Sky Stories
+      </h3>
+      <div class="flex items-center space-x-1 mb-1 select-none">
+       <span class="bg-green-600 text-white text-xs rounded px-1.5 py-0.5 font-semibold flex items-center">
+        4.2
+        <i class="fas fa-star ml-1 text-xs">
+        </i>
+       </span>
+       <span class="text-gray-500 text-xs uppercase tracking-wide">
+        Dining
+       </span>
+      </div>
+      <p class="text-gray-500 text-xs leading-tight truncate select-text" title="Italian, Continental, North Indian,...">
+       Italian, Continental, North Indian,...
+       <br/>
+       Baner, Pune
+      </p>
+     </div>
+    </article>
+    <!-- Card 7 -->
+    <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+     <div class="relative">
+      <img alt="Night bar with colorful lights and seating" class="w-full h-36 object-cover" height="220" src="https://storage.googleapis.com/a1aa/image/2934a104-10e2-4ef8-fdc3-ae9b1b2619a4.jpg" width="400"/>
+      <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs font-semibold rounded px-2 py-0.5 flex items-center space-x-1 select-none">
+       <i class="fas fa-bolt">
+       </i>
+       <span>
+        Flat 50% OFF
+       </span>
+      </div>
+     </div>
+     <div class="p-3">
+      <h3 class="font-bold text-sm mb-0.5 select-text">
+       Agent Jack's
+      </h3>
+      <div class="flex items-center space-x-1 mb-1 select-none">
+       <span class="bg-green-600 text-white text-xs rounded px-1.5 py-0.5 font-semibold flex items-center">
+        4.2
+        <i class="fas fa-star ml-1 text-xs">
+        </i>
+       </span>
+       <span class="text-gray-500 text-xs uppercase tracking-wide">
+        Dining
+       </span>
+      </div>
+      <p class="text-gray-500 text-xs leading-tight truncate select-text" title="Chinese, Salad, North Indian, BB...">
+       Chinese, Salad, North Indian, BB...
+       <br/>
+       Senapati Bapat Road, Pune
+      </p>
+     </div>
+    </article>
+    <!-- Card 8 -->
+    <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+     <div class="relative">
+      <img alt="Outdoor restaurant at night with sign 'Klinq' and seating" class="w-full h-36 object-cover" height="220" src="https://storage.googleapis.com/a1aa/image/d3d57d28-1a6c-4c5f-0d81-a1bc587280d3.jpg" width="400"/>
+     </div>
+     <div class="p-3">
+      <h3 class="font-bold text-sm mb-0.5 select-text">
+       Klinq - Cocktails &amp; Cuisine
+      </h3>
+      <div class="flex items-center space-x-1 mb-1 select-none">
+       <span class="bg-green-600 text-white text-xs rounded px-1.5 py-0.5 font-semibold flex items-center">
+        4.3
+        <i class="fas fa-star ml-1 text-xs">
+        </i>
+       </span>
+       <span class="text-gray-500 text-xs uppercase tracking-wide">
+        Dining
+       </span>
+      </div>
+      <p class="text-gray-500 text-xs leading-tight truncate select-text" title="North Indian, European, Asian, C...">
+       North Indian, European, Asian, C...
+       <br/>
+       Viman Nagar, Pune
+      </p>
+     </div>
+    </article>
+   </div>
+  </main>
+ </body>
+</html>

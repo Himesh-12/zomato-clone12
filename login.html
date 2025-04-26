@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black bg-opacity-90 flex items-center justify-center min-h-screen">
+  <div class="bg-white rounded-md w-[360px] p-6 relative">
+    <h2 class="text-gray-700 text-2xl font-normal mb-6">Login</h2>
+    <button aria-label="Close" class="absolute top-5 right-5 text-gray-700 text-xl leading-none hover:text-gray-900 focus:outline-none" >
+      &times;
+    </button>
+    <form>
+      <div class="flex border border-gray-300 rounded-md overflow-hidden mb-4">
+        <button type="button" class="flex items-center gap-1 px-3 border-r border-gray-300">
+          <img
+            src="https://flagcdn.com/w20/in.png"
+            alt="Flag of India"
+            width="20"
+            height="15"
+            class="inline-block"
+          />
+          <span class="text-gray-700 text-sm select-none">+91</span>
+          <i class="fas fa-caret-down text-gray-500 text-xs"></i>
+        </button>
+        <input
+          type="tel"
+          placeholder="Phone"
+          class="flex-1 px-3 py-2 text-gray-400 placeholder-gray-400 focus:outline-none"
+          aria-label="Phone number"
+        />
+      </div>
+      <button
+        type="submit"
+        class="w-full bg-red-500 hover:bg-red-600 text-white text-sm font-normal py-2 rounded-md mb-4 transition-colors"
+      >
+        Send One Time Password
+      </button>
+      <div class="flex items-center text-gray-400 text-xs mb-4">
+        <div class="flex-grow border-t border-gray-300"></div>
+        <span class="px-2 select-none">or</span>
+        <div class="flex-grow border-t border-gray-300"></div>
+      </div>
+      <button
+        type="button"
+        class="w-full border border-gray-300 rounded-md py-2 mb-3 flex items-center justify-center gap-2 text-gray-700 text-sm hover:bg-gray-50 transition"
+      >
+        <i class="fas fa-envelope text-red-500"></i>
+        Continue with Email
+      </button>
+      <button
+        type="button"
+        class="w-full border border-gray-300 rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-sm hover:bg-gray-50 transition"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
+          alt="Google G logo"
+          width="20"
+          height="20"
+          class="inline-block"
+        />
+        Sign in with Google
+      </button>
+    </form>
+    <p class="text-gray-600 text-xs mt-6">
+      New to Zomato?
+      <a href="#" class="text-red-500 hover:underline">Create account</a>
+    </p>
+  </div>
+</body>
+</html>
